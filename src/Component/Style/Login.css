@@ -1,0 +1,152 @@
+/* Navbar.css */
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #0d253f;
+    color: white;
+  }
+  
+  #navbar input[type="search"] {
+    border: none;
+    padding: 8px;
+    border-radius: 20px;
+    width: 300px;
+  }
+  
+  #navbar i {
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  
+  .fa-cart-shopping,
+  .fa-user {
+    color: white;
+    transition: color 0.3s ease;
+  }
+  
+  .fa-cart-shopping:hover,
+  .fa-user:hover {
+    color: gray;
+  }
+  
+  /* Container Styles */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* Uncomment the lines below to add a background image */
+  /* background-image: url('https://images.pexels.com/photos/1037999/pexels-photo-1037999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat; */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Login Screen */
+.logscreen {
+  width: 100%;
+  max-width: 400px;
+  background-color: rgba(255, 255, 255, 0.9); /* Add slight transparency */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Body Content */
+.logbody {
+  padding: 20px;
+}
+
+/* Header */
+.header p {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form Styles */
+.logform form {
+  display: flex;
+  flex-direction: column;
+}
+
+.logform label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.logform input,
+.logform select {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  width: 100%;
+}
+
+.logform input:focus,
+.logform select:focus {
+  border-color: #042950;
+  box-shadow: 0 0 4px rgba(12, 67, 127, 0.5);
+}
+
+.logform button {
+  background-color: #0d253f;
+    color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logform button:hover {
+  background-color: #0d253f;}
+
+/* Footer Section */
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+.footer a {
+  color: #093564;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .logscreen {
+    width: 90%;
+  }
+
+  .header p {
+    font-size: 18px;
+  }
+
+  .logform button {
+    font-size: 14px;
+    padding: 8px;
+  }
+}

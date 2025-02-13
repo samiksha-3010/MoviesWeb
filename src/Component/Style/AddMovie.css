@@ -1,0 +1,115 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  #add-movie-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #add-movie-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  #add-movie-container fieldset {
+    border: none;
+    padding: 0;
+  }
+  
+  #add-movie-container label {
+    font-size: 14px;
+    color: black;
+  }
+  
+  #add-movie-container input,
+  #add-movie-container textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  #add-movie-container input:focus,
+  #add-movie-container textarea:focus {
+    outline: none;
+    border-color: rgb(2, 16, 30);
+    box-shadow: 0 0 4px rgba(3, 26, 50, 0.4);
+  }
+  
+  #add-movie-container textarea {
+    resize: none;
+    height: 80px;
+  }
+  
+  #add-movie-container button {
+    background-color: #0d253f;
+        color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #add-movie-container button:hover {
+    background-color: #0d253f;  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #add-movie-container {
+      max-width: 90%;
+      margin: 30px auto;
+      padding: 15px;
+    }
+  
+    #add-movie-container label {
+      font-size: 13px;
+    }
+  
+    #add-movie-container input,
+    #add-movie-container textarea {
+      font-size: 13px;
+      padding: 8px;
+    }
+  
+    #add-movie-container button {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #add-movie-container {
+      max-width: 100%;
+      margin: 20px auto;
+    }
+  
+    #add-movie-container label {
+      font-size: 12px;
+    }
+  
+    #add-movie-container input,
+    #add-movie-container textarea {
+      font-size: 12px;
+      padding: 6px;
+    }
+  
+    #add-movie-container button {
+      font-size: 12px;
+      padding: 8px;
+    }
+  }
+  

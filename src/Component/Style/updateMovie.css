@@ -1,0 +1,273 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  .update-movie-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .update-movie-container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .update-movie-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .update-movie-container label {
+    font-size: 14px;
+    /* font-weight: bold; */
+    color: black;
+  }
+  
+  .update-movie-container input,
+  .update-movie-container textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  .update-movie-container input:focus,
+  .update-movie-container textarea:focus {
+    outline: none;
+    border-color: hsl(232, 81%, 10%);
+    box-shadow: 0 0 4px rgba(63, 81, 181, 0.4);
+  }
+  
+  .update-movie-container button {
+    background-color: #0d253f;  
+      color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .update-movie-container button:hover {
+    background-color: #0d253f;  }
+  
+  .update-movie-container button:focus {
+    outline: none;
+  }
+  
+  .update-movie-container textarea {
+    resize: none;
+    height: 80px;
+  }
+  
+  @media (max-width: 768px) {
+    .update-movie-container {
+      padding: 15px;
+    }
+  }
+  
+/* Responsive Design */
+@media (max-width: 768px) {
+    .update-movie-container {
+      max-width: 90%; /* Reduce the width for smaller devices */
+      margin: 20px auto;
+      padding: 15px;
+    }
+  
+    .update-movie-container h1 {
+      font-size: 24px; /* Adjust heading size */
+    }
+  
+    .update-movie-container label {
+      font-size: 12px; /* Adjust label font size */
+    }
+  
+    .update-movie-container input,
+    .update-movie-container textarea {
+      font-size: 12px; /* Adjust input and textarea font size */
+      padding: 8px;
+    }
+  
+    .update-movie-container button {
+      font-size: 14px; /* Adjust button font size */
+      padding: 8px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .update-movie-container h1 {
+      font-size: 20px; /* Further reduce heading size for smaller screens */
+    }
+  
+    .update-movie-container label {
+      font-size: 11px; /* Further reduce label size */
+    }
+  
+    .update-movie-container input,
+    .update-movie-container textarea {
+      font-size: 11px; /* Further reduce input and textarea size */
+      padding: 6px;
+    }
+  
+    .update-movie-container button {
+      font-size: 12px; /* Further reduce button size */
+      padding: 6px;
+    }
+  }
+
+
+
+  /* src/components/MovieManagement/Style/updateMovie.css */
+.update-movie-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.update-movie-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.update-movie-header h1 {
+  margin: 0;
+  color: #333;
+  font-size: 1.8rem;
+}
+
+.back-button {
+  padding: 0.5rem 1rem;
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.back-button:hover {
+  background-color: #5a6268;
+}
+
+.movie-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.form-control {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+textarea.form-control {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+label {
+  font-weight: 500;
+  color: #444;
+}
+
+.image-preview {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.image-preview img {
+  max-width: 100%;
+  max-height: 300px;
+  border-radius: 4px;
+}
+
+.submit-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.submit-button:hover {
+  background-color: #218838;
+}
+
+.submit-button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  color: #666;
+}
+
+.error-container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.error-message {
+  color: #dc3545;
+  margin-bottom: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .update-movie-container {
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .update-movie-header {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}

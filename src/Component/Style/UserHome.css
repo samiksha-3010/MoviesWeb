@@ -1,0 +1,168 @@
+/* MovieHome.css */
+
+.movie-home {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #121212;
+    color: white;
+  }
+  
+  /* Movie Slider */
+  .carousel {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+  }
+  
+  .slide-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .overlay h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .overlay p {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  
+  .details {
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+  }
+  
+  /* Movie List Section */
+  .movie-list {
+    padding: 20px;
+  }
+  
+  .movies {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .movie-card {
+    width: 220px;
+    background: #222;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .movie-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .movie-card img {
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+  }
+  
+  .desc {
+    font-size: 14px;
+    color: black;
+    margin: 5px 0;
+  }
+  
+  .details {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+  }
+  
+  
+  /* For tablets (768px and below) */
+  @media (max-width: 768px) {
+    .carousel {
+      height: 300px;
+    }
+  
+    .slide-image {
+      height: 300px;
+    }
+  
+    .overlay {
+      padding: 15px;
+    }
+  
+    .overlay h2 {
+      font-size: 20px;
+    }
+  
+    .overlay p {
+      font-size: 14px;
+    }
+  
+    .details {
+      font-size: 12px;
+    }
+  
+    .movies {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .movie-card {
+      width: 80%;
+    }
+  }
+  
+  /* For mobile (480px and below) */
+  @media (max-width: 480px) {
+    .carousel {
+      height: 250px;
+    }
+  
+    .slide-image {
+      height: 250px;
+    }
+  
+    .overlay {
+      padding: 10px;
+    }
+  
+    .overlay h2 {
+      font-size: 18px;
+    }
+  
+    .overlay p {
+      font-size: 12px;
+    }
+  
+    .details {
+      font-size: 10px;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+  
+    .movie-card {
+      width: 90%;
+    }
+  
+    .movie-card img {
+      height: 200px;
+    }
+  }
+  
